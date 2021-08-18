@@ -41,13 +41,115 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 400;
-    background-color: #E5E5E5;
+    background-color: rgba(255, 254, 251, 0.8);
 }
 
 .container {
-	max-width: 1312px;
+	max-width: 1440px;
 	padding: 0 32px;
 	margin: 0 auto;
+}
+
+.catalog__wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 16px;
+}
+
+.filter-style {
+    background: #FFFEFB;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #B4B4B4;
+    padding: 10px 16px 11px;
+    margin-bottom: 16px;
+}
+
+.catalog__inner {
+    display: flex;
+}
+
+.catalog__inner-aside {
+    background-color: #FFFEFB;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    height: 470px;
+    min-width: 332px;
+}
+
+.aside__form {
+    margin-top: 24px;
+
+    & p {
+        position: relative;
+        margin: 16px 24px 4px;
+        font-size: 10px;
+        letter-spacing: -0.02em;
+        line-height: 13px;
+
+        &:not(.product__description)::after {
+            position: absolute;
+            content: url(../images/red-circle.svg);
+            top: -5px;
+        }
+    }
+
+    & input {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 4px 24px 0;
+    color: #B4B4B4;
+    padding: 10px 16px;
+    min-width: 284px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+        &:not(.input-product__description) {
+            height: 36px;
+        }
+
+        &.input-product__description {
+            height: 125px;
+        }
+    }
+
+    & button {
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 24px 0 24px 24px;
+        background: #EEEEEE;
+        border-radius: 10px;
+        border: 0;
+        padding: 10px 95px;
+        text-align: center;
+        color: #B4B4B4;
+    }
+}
+
+.catalog__inner-product {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    margin-left: 16px;
+    margin-bottom: 16px;
 }
 
 .product__item {
@@ -71,8 +173,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    right: 20px;
-    top: -13px;
+    right: 30px;
+    top: -10px;
 }
 
 .product-item__delete--hover::after {
@@ -101,3 +203,4 @@ body {
     margin: 32px 16px 0;
     padding-bottom: 24px;
 }
+
