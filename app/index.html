@@ -28,16 +28,43 @@
 				</div>
 				<div class="catalog__inner">
 					<div class="catalog__inner-aside">
-						<form class="aside__form">
+						<form id="aside__form" class="aside__form" name="aside__form">
 							<p class="product__name">Наименование товара</p>
-							<input type="text" class="input-product__name" />
+							<input
+								type="text"
+								id="input-product__name"
+								class="input-product__name"
+								name="input-product__name"
+								placeholder="Введите наименование товара"
+							/>
 							<p class="product__description">Описание товара</p>
-							<input type="text" class="input-product__description" />
+							<textarea
+								class="textarea-product__description"
+								name="input-product__description"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="Введите описание товара"
+							></textarea>
 							<p class="product__link-img">Ссылка на изображение товара</p>
-							<input type="text" class="input-product__link-img" />
+							<input
+								type="text"
+								id="input-product__link-img"
+								class="input-product__link-img"
+								name="input-product__link-img"
+								placeholder="Введите ссылку"
+							/>
 							<p class="product__price">Цена товара</p>
-							<input type="text" class="input-product__price" />
-							<button class="product__add">Добавить товар</button>
+							<input
+								type="text"
+								id="input-product__price"
+								class="input-product__price"
+								name="input-product__price"
+								placeholder="Введите цену"
+							/>
+							<button id="btn__add" type="button" class="product__add">
+								Добавить товар
+							</button>
 						</form>
 					</div>
 					<div class="catalog__inner-product">
